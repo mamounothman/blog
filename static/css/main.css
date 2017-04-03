@@ -1,0 +1,78 @@
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #FFFFFF;
+}
+
+@font-face{
+  font-family: "Roboto-Light";
+  src: local('Roboto-Light'), url('/static/fonts/Roboto-Light.ttf');
+}
+
+body {
+  font-family: "Roboto-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  /* background-color: #FAFAFA; */
+  background: url("/static/img/symphony.png") 
+  repeat scroll center top transparent;
+}
+
+/*a {
+  color: #FF6600;
+}*/
+
+p {
+  text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li:before {
+    content: '\00BB';
+    margin: 0 1em;    /* any design */
+}
+
+h2 {
+  margin-top:40px;
+  margin-bottom:20px;
+}
+
+h3 {
+  margin-top:30px;
+}
+
+.greybar_long {
+  margin-left: auto;
+  margin-right:auto;
+  width:80%;
+  height:5px;
+  background-color: #eaeaea;
+  border-radius: 2px;
+}
+
+.centered {
+    text-align:center;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.marginlr {
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.docitem {
+  display: inline-block;
+  width:75px;
+}
+

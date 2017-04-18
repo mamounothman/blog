@@ -10,14 +10,14 @@
 
 @font-face{
   font-family: "Roboto-Light";
-  src: local('Roboto-Light'), url('/static/fonts/Roboto-Light.ttf');
+  src: local('Roboto-Light'), url('/wp-content/themes/cello/static/fonts/Roboto-Light.ttf');
 }
 
 body {
   font-family: "Roboto-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 13px;
   /* background-color: #FAFAFA; */
-  background: url("/static/img/symphony.png") 
+  background: url("/wp-content/themes/cello/static/img/symphony.png") 
   repeat scroll center top transparent;
 }
 
@@ -34,10 +34,9 @@ ul {
     padding: 0px;
 }
 
-ul li:before {
-    content: '\00BB';
-    margin: 0 1em;    /* any design */
-}
+.searchform label {
+  display: none;
+} 
 
 h2 {
   margin-top:40px;
@@ -76,3 +75,6 @@ hr {
   width:75px;
 }
 
+#sidebar {
+  margin: 30px 0;
+}

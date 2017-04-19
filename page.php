@@ -1,7 +1,24 @@
-<div class="row">
-  <div class="col-xs-12 col-md-12">
-    <div>
-      
-    </div>
-  </div>
-</div>
+<?php
+/**
+ * The main template file
+ *
+ * @package Artofeclipse
+ * @subpackage Cello
+ */
+
+get_header(); ?>
+
+
+  <div id="primary" class="site-content">
+    <div id="content" role="main">
+
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', 'page' ); ?>
+        <?php comments_template( '', true ); ?>
+      <?php endwhile; // end of the loop. ?>
+
+    </div><!-- #content -->
+  </div><!-- #primary -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

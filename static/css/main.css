@@ -34,9 +34,15 @@ ul {
     padding: 0px;
 }
 
+label {
+  display: block;
+}
+
 .searchform label {
   display: none;
 } 
+
+
 
 h2 {
   margin-top:40px;
